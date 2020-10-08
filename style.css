@@ -1,0 +1,99 @@
+body {
+  display: flex;
+  flex-direction: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #fcfcfc;
+  font-family: 'Roboto', sans-serif;
+}
+/* Form structure */
+.Contact {
+  box-sizing: border-box;
+  padding: 1rem;
+  width: 100%;
+}
+.Contact-fieldGroup {
+  display: flex;
+  flex-direction: column;
+  margin: 0; /* Zeroing out our form UL for display purposes */
+  padding-left: 0;
+  list-style: none;
+}
+.Contact-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+.Contact-field:last-child {
+  margin-bottom: 0;
+}
+/* Form elements */
+.Contact-input, .Contact-textarea {
+  padding: 0.75rem 1.25rem;
+  background-color: #fff;
+  border: 1px solid #bbb;
+  border-radius: 0.25rem;
+  color: #474747;
+}
+.Contact-input:focus, .Contact-textarea:focus {
+  outline-color: #2c8bff;
+}
+/* Placeholder styling support for browsers */
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #bbb;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #bbb;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #bbb;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #bbb;
+}
+
+.Contact-label {
+  flex: 1;
+  margin-bottom: 0.25rem;
+  color: #474747;
+}
+.Contact-required {
+  color: crimson;
+}
+.Contact-button {
+  padding: 1rem 2rem;
+  background-color: #414d5c;
+  border: none;
+  border-radius: 0.25rem;
+  color: #fff;
+}
+.Contact-button:hover, .Contact-button:active {
+  background-color: #2c8bff;
+}
+@media all and (min-width: 50rem) {
+  .Contact {
+    align-self: center;
+    width: 25rem;
+  }
+  .Contact-fieldGroup {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .halfWidth {
+    box-sizing: border-box;
+    width: 50%;
+  }
+  .halfWidth:first-child {
+    padding-right: 0.5rem;
+  }
+  .fullWidth {
+    width: 100%;
+  }
+  .Contact-field:last-child {
+    display: flex;
+    align-items: flex-end;
+  }
+  .Contact-button {
+    width: auto;
+  }
+}

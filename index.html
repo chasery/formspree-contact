@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact Form</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <form class="Contact" action="https://formspree.io/f/xknpopoo" method="POST">
+      <ul class="Contact-fieldGroup">
+        <li class="Contact-field halfWidth">
+          <label class="Contact-label" for="email">Your E-mail <span class="Contact-required">*</span></label>
+          <input id="email" class="Contact-input" type="email" name="_replyto" autofocus placeholder="joe@random.com" required>
+        </li>
+        <li class="Contact-field halfWidth">
+          <label class="Contact-label" for="name">Your Name</label>
+          <input id="name" class="Contact-input" type="text" name="name" placeholder="Joe Random">
+        </li>
+        <li class="Contact-field fullWidth">
+          <label class="Contact-label" for="message">Your Message</label>
+          <textarea id="message" class="Contact-input" type="email" name="message" placeholder="I love your work!"></textarea>
+        </li>
+        <li class="Contact-field fullWidth">
+          <input class="Contact-button" type="submit" value="Send">
+        </li>
+      </ul>
+    </form>
+  </body>
+</html>
+
+
